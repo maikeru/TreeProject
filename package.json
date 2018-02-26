@@ -1,0 +1,20 @@
+{
+  "name": "filetree",
+  "version": "1.0.0",
+  "description": "Display weighted file information in a tree structure",
+  "main": "src/index.js",
+  "author": "P. Michael Holland",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.0.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.0.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  }
+}
