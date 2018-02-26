@@ -1,0 +1,15 @@
+.tree-parent::before {
+  content: '[+] ';
+}
+
+.tree-parent__expanded::before {
+  content: '';
+}
+
+.tree-child::before {
+  content: '[+] ';
+}
+
+.tree-child__hidden {
+  visibility: hidden;
+}
