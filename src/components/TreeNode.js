@@ -25,7 +25,7 @@ export default class TreeNode extends React.Component {
       nodeClass = `${nodeClass}__expanded`;
     }
 
-    const hideChildren = !this.state.isExpanded;
+    const hideChildren = hidden || !this.state.isExpanded;
     return (
       <div className="treeWrapper">
         <div className={nodeClass} onClick={this.handleParentClick}>
@@ -36,7 +36,6 @@ export default class TreeNode extends React.Component {
             <TreeNode
               name={child.name}
               hidden={hideChildren}
-              hideChildren={hideChildren}
               children={child.children ? child.children : []}
             />
           ))}
