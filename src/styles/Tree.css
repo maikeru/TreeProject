@@ -1,15 +1,13 @@
-.tree-parent::before {
-  content: '[+] ';
-}
-
-.tree-parent__expanded::before {
+.tree-node__expanded::before {
   content: '';
+  text-indent: 4em;
 }
 
-.tree-child::before {
+.tree-node::before {
   content: '[+] ';
 }
 
-.tree-child__hidden {
+.tree-node__hidden {
   visibility: hidden;
+  height: 0px;
 }
